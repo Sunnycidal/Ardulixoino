@@ -71,37 +71,14 @@
 % INFORMAÇÕES DO TRABALHO
 % =========================================================
 
-\instituicao{
-Centro Universitário Senac \par
-Análise e Desenvolvimento de Sistemas \par
-Disciplina: Conceitos de computação
-}
-
-\autor{Altino Ávila \\ Guilherme Diniz \\ 
-Samuel \\ Jessiê}
-
-\titulo{
-Lixeira Automática utilizando Arduino Uno
-}
-
-\preambulo{
-Tecnologia Frugal
-}
-
-\orientador{
-Fábio Brussolo
-}
-
-\tipotrabalho{
-Projeto
-}
-
-\local{
-São Paulo
-}
-
-\data{
-2026
+\instituicao{Centro Universitário Senac \par Análise e Desenvolvimento de Sistemas \par Disciplina: Conceitos de computação}
+\autor{Altino Ávila \\ Guilherme Diniz \\ Samuel Teixeira\\ Jessiê Nascimento}
+\titulo{Lixeira Automática utilizando Arduino Uno}
+\preambulo{Tecnologia Frugal}
+\orientador{Fábio Brussolo}
+\tipotrabalho{Projeto}
+\local{São Paulo}
+\data{2026
 }
 
 % =========================================================
@@ -152,9 +129,9 @@ Os objetivos deste projeto são:
 
 \begin{enumerate}
     \item Desenvolver uma lixeira automática funcional utilizando Arduino Uno;
-    \item Implementar abertura automática sem contato físico;
     \item Utilizar sensores ultrassônicos para detecção de presença;
     \item Controlar a tampa utilizando servo motor SG90;
+    \item Implementar abertura automática sem contato físico;
     \item Implementar fechamento automático temporizado;
     \item Criar uma base para futuras integrações IoT;
 \end{enumerate}
@@ -176,8 +153,6 @@ microcontrolador ATmega328P. A placa possui 14 portas digitais,
 
 O HC-SR04 é um sensor capaz de medir distâncias utilizando ondas ultrassônicas de 40 kHz. 
 
-\textbf{Como explicar de forma simples:} Ele funciona exatamente como a ecolocalização de um morcego ou o sonar de um submarino. O sensor \textit{grita} um som muito agudo (que não conseguimos ouvir) e conta quanto tempo o eco demora para bater na mão de uma pessoa e voltar. Sabendo o tempo da viagem do som, o Arduino calcula a distância exata.
-
 O módulo possui quatro pinos:
 \begin{itemize}
     \item VCC (Energia);
@@ -189,9 +164,6 @@ O módulo possui quatro pinos:
 \section{Servo Motor SG90}
 
 O SG90 é um micro servo motor utilizado para controle angular. Seu funcionamento ocorre através de sinais enviados pelo Arduino.
-
-\textbf{Como explicar de forma simples:} Diferente do motor de um carrinho de controle remoto que fica girando sem parar, o servo motor funciona mais como a articulação de um \textit{braço robótico}. Ele sabe exatamente em qual ângulo está posicionado e consegue mover a tampa da lixeira controladamente do ponto A (fechada) ao ponto B (aberta), e parar lá.
-
 
 % =========================================================
 % ESPECIFICAÇÕES DO SISTEMA
@@ -205,7 +177,7 @@ O SG90 é um micro servo motor utilizado para controle angular. Seu funcionament
     \item Detectar presença em até 20 cm;
     \item Abrir automaticamente a tampa;
     \item Fechar automaticamente após 5 segundos;
-    \item Registrar eventos via Serial Monitor.
+    \item Registrar eventos via Serial Monitor. (Arduino IDE)
 \end{enumerate}
 
 \section{Requisitos Não-Funcionais}
@@ -579,8 +551,5 @@ Durante o projeto foram desenvolvidos conhecimentos em:
     \item Conceitos de IoT (preparação de hardware para comunicação remota).
 \end{itemize}
 
-\section{Pitch}
-
-Falta desenvolver
 
 \end{document}
